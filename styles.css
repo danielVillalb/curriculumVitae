@@ -1,24 +1,88 @@
+*{
+  margin: 0;
+  font-size: 22px;
+}
 body{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color:rgb(128, 128, 238) ;
   font-size: 22px;
-  min-width: 768px;
+  
+  min-width: 400px;
+  max-width: 1200px;
 }
+.barra{
+  background: black ;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+ 
+
+}
+.nav-busqueda{
+  text-align: center;
+  padding: 10px;
+  
+}
+nav.nav-busqueda a {
+ 
+  color: red;
+  text-decoration: none;
+  font-size: 22px;
+  display: inline-block;
+  margin-right: 40px;
+  
+
+
+  
+
+  
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 img{
   
   width: 200px;
   height: 200px;
   border-radius: 100%;
+  
+  
 }
 
 div#retrato{
-  position:relative;
-  margin: 0 auto;
-  align-items: center;
+  background-color: blueviolet;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
+
+  margin: 0 auto;
+ 
+  align-items: center;
+  
   justify-content: center;
-  left: 40%;
+  
   
 
 }
@@ -26,6 +90,7 @@ div#retrato{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
 }
 div.container-datosPersonales{
   display: flex;
@@ -34,7 +99,7 @@ div.container-datosPersonales{
   height: 630px;
   padding: 2px;
  
-  margin: 2px;
+ 
   
   
   
@@ -88,7 +153,12 @@ li#experiencia{
 
 
 
+.boton{
+  align-items: center;
+  text-align: center;
 
+
+}
 
 
 
@@ -126,36 +196,86 @@ li#experiencia{
 
 
 @media (max-width: 768px){
-
+  *{
+    margin:0;
+  }
   body{
     background-color: green;
     color:white;
   }
+/*barra de navegacion*/
+  .barra{
+    background: black ;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  
+  }
+  .nav-busqueda{
+    text-align: center;
+    padding: 10px;
+  }
+  nav.nav-busqueda a {
+   
+    color: red;
+    text-decoration: none;
+    font-size: 22px;
+    display: inline-block;
+  
+    padding: 10px;
+    
+    
+  
+    
+    
+  
+  }
+
+
+
+
+
+
+
   div.container-datosPersonales{
     display: block;
     width: 100%;
 
     padding: 2px;
     
-    margin: 2px;
+    
     
     
   }
   img{
     width: 200px;
     height: 200px;
-    position: relative;
-    left: -40%;
     border-radius: 100;
-    top: -100px;
     
   }
   div#retrato{
     position:relative;
     margin: 0 auto;
-    border-radius: 100%;
-    float: inline-start;
+    width: 200px;
+    height: 200px;
+    position: relative;
     
+    border-radius: 100;
+    
+    margin: 0 auto;
+    
+    align-items: center;
+    justify-content: center;
+    
+    
+    }
+
+
+
+
+
+
   
   }
   div.container-datosFormacion{
@@ -164,7 +284,7 @@ li#experiencia{
 
     padding: 2px;
     
-    margin: 2px;
+    
     
   
   }
@@ -174,7 +294,7 @@ li#experiencia{
 
     padding: 2px;
    
-    margin: 2px;
+    
     
   
   }
@@ -186,11 +306,11 @@ li#experiencia{
   li.experiencia{
     justify-content: center;
     align-items: center;
-    margin: 0 25%;
+    margin: 25%;
    
   }
 
-}
+
 
 
 

@@ -1,68 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculum</title>
-    <link rel="stylesheet" href="normalize.css" type="text/css">
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.1.js"
+    ></script>
+  </head>
+  <body>
     
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.js"></script>
-</head>
-<body>
-    <nav class="nav-busqueda">
-        <a href="https://randomuser.me/api/?inc=gender,name,location,email,dob,phone,cell,picture">Link a api sobre personas</a>
-        <a href="https://datos.unican.es/docencia/54/asignaturas-de-grado-2018-2019.json">Link de universidades</a>
-        <a href="https://api.generadordni.es/v2/profiles/company?results=5&include_fields=nif,name,activity,email,phonenumber">Link de trabajos</a>
-        <a href="cv/cv_Personal.html">Informacion personal</a>
-    </nav>
-    <h1 class="cv">Curriculum Vitae</h1>
-    <div id="retrato" ><img src="" alt="Imagen generada por el api"></div>
-    <div class="container-datosPersonales">
-        <!--Informacion relacionada alo personal-->
+    <div class="barra">
+      <nav class="nav-busqueda">
         
-        <ul class="tabla-deDatos"> 
-
-            <li id="titulo1"></li><br>
-            <li id="nombre"></li><br>
-            <li id="apellido"></li><br>
-            <li id="nacionalidad"></li><br>
-            <li id="edad"></li><br>
-            <li id="direccion"></li><br>
-            <li id="celular"></li><br>
-            <li id="email"></li><br>
-            
-        </ul>
+        <a
+          href="https://randomuser.me/api/?inc=gender,name,location,email,dob,phone,cell,picture"
+          >Link a api sobre personas</a
+        >
+        <a
+          href="https://datos.unican.es/docencia/54/asignaturas-de-grado-2018-2019.json"
+          >Link de universidades</a
+        >
+        <a
+          href="https://api.generadordni.es/v2/profiles/company?results=5&include_fields=nif,name,activity,email,phonenumber"
+          >Link de trabajos</a
+        >
+        <a href="cv/cv_Personal.html">Informacion personal</a>
+        <a><button id="boton" type="button">Generar Nuevo Dato</button></a>
+      </nav>
     </div>
-    
+    <h1 class="cv">Curriculum Vitae</h1>
+    <p id="parrafo">Esta es mi primer pagina web, se trata de una generadora de cv de personas ficticas, las universidades<br>
+    y los paises son Reales</p>
 
 
+    <div id="retrato"><img src="" alt="Foto" /></div>
+    <div class="container-datosPersonales">
+      <!--Informacion relacionada alo personal-->
 
+      <ul class="tabla-deDatos">
+        <li id="titulo1"></li>
+        <br />
+        <li id="nombre"></li>
+        <br />
+        <li id="apellido"></li>
+        <br />
+        <li id="nacionalidad"></li>
+        <br />
+        <li id="edad"></li>
+        <br />
+        <li id="direccion"></li>
+        <br />
+        <li id="celular"></li>
+        <br />
+        <li id="email"></li>
+        <br />
+      </ul>
+    </div>
 
     <div class="container-datosFormacion">
-        <!--Informacion academicaxx-->
-        <ul>
-        <li id="titulo2"></li><br>
-        <li id="centro"></li><br>
-        <li id="centro2"></li><br>
-        <li id="centro3"></li><br>
-        <li id="centro4"></li><br>
-        </ul>
+      <!--Informacion academicaxx-->
+      <ul>
+        <li id="titulo2"></li>
+        <br />
+        <li id="centro"></li>
+        <br />
+        <li id="centro2"></li>
+        <br />
+        <li id="centro3"></li>
+        <br />
+        <li id="centro4"></li>
+        <br />
+      </ul>
     </div>
-    
+
     <div class="container-datosTrabajo">
-        <ul>
-        <li id="experiencia"></li><br>
-        <li id="trabajo1"></li><br>
-        <li id="trabajo2"></li><br>
-        <li id="trabajo3"></li><br>
-        <li id="trabajo4"></li><br>
-        </ul>
+      <ul>
+        <li id="experiencia"></li>
+        <br />
+        <li id="trabajo1"></li>
+        <br />
+        <li id="trabajo2"></li>
+        <br />
+        <li id="trabajo3"></li>
+        <br />
+        <li id="trabajo4"></li>
+        <br />
+      </ul>
     </div>
     <div class="caja">conocimiento</div>
     <p id="demo">Aprendiendp js</p>
-    <button id="boton" type="button">presiona</button>
+    
     <script src="javascript.js" type="module"></script>
-</body>
+  </body>
 </html>
