@@ -29,7 +29,7 @@ div#retrato{
 }
 div.container-datosPersonales{
   display: flex;
-  float: right;
+  float: left;
   width: 48%;
   height: 630px;
   padding: 2px;
@@ -40,7 +40,7 @@ div.container-datosPersonales{
   
 }
 
-li.titulo{
+li#titulo1, li#titulo2{
   align-items: center;
   justify-content: center;
   margin-left: 25%;
@@ -78,7 +78,7 @@ div.container-datosTrabajo{
 
 
 
-li.experiencia{
+li#experiencia{
   justify-content: center;
   align-items: center;
   margin: 0 30%;
