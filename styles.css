@@ -1,0 +1,227 @@
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color:rgb(128, 128, 238) ;
+  font-size: 22px;
+  min-width: 768px;
+}
+
+img{
+  
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+div#retrato{
+  position:relative;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 100%;
+  justify-content: center;
+  left: 40%;
+  
+
+}
+.cv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.container-datosPersonales{
+  display: flex;
+  float: right;
+  width: 48%;
+  height: 630px;
+  padding: 2px;
+ 
+  margin: 2px;
+  
+  
+  
+}
+
+li.titulo{
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%;
+}
+
+
+
+li{
+  list-style-type: none;
+}
+
+div.container-datosFormacion{
+  display: flex;
+  float: right;
+  width: 48%;
+  height: 630px;
+  padding: 2px;
+  
+  margin: 2px;
+  
+
+}
+div.container-datosTrabajo{
+  display: inline-block;
+  width:100%;
+  
+
+  padding: 2px;
+  
+  
+  margin:0 auto;
+  
+
+}
+
+
+
+li.experiencia{
+  justify-content: center;
+  align-items: center;
+  margin: 0 30%;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+
+  body{
+    background-color: green;
+    color:white;
+  }
+  div.container-datosPersonales{
+    display: block;
+    width: 100%;
+
+    padding: 2px;
+    
+    margin: 2px;
+    
+    
+  }
+  img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: -40%;
+    border-radius: 100;
+    top: -100px;
+    
+  }
+  div#retrato{
+    position:relative;
+    margin: 0 auto;
+    border-radius: 100%;
+    float: inline-start;
+    
+  
+  }
+  div.container-datosFormacion{
+    display: block;
+    width: 100%;
+
+    padding: 2px;
+    
+    margin: 2px;
+    
+  
+  }
+  div.container-datosTrabajo{
+    display: block;
+    width: 100%;
+
+    padding: 2px;
+   
+    margin: 2px;
+    
+  
+  }
+  li.titulo{
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+  }
+  li.experiencia{
+    justify-content: center;
+    align-items: center;
+    margin: 0 25%;
+   
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
