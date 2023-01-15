@@ -10,57 +10,12 @@ body{
   min-width: 400px;
   max-width: 1200px;
 }
-.barra{
-  background: black ;
-  position: fixed;
-  left: 0;
-  top: 0;
+div.barra{
+  background: #2fcdcd;
+  height: 80px;
   width: 100%;
- 
 
 }
-.nav-busqueda{
-  text-align: center;
-  padding: 10px;
-  
-}
-nav.nav-busqueda a {
- 
-  color: red;
-  text-decoration: none;
-  font-size: 22px;
-  display: inline-block;
-  margin-right: 40px;
-  
-
-
-  
-
-  
-  
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 img{
   
@@ -113,9 +68,7 @@ li#titulo1, li#titulo2{
 
 
 
-li{
-  list-style-type: none;
-}
+
 
 div.container-datosFormacion{
   display: flex;
@@ -161,6 +114,109 @@ li#experiencia{
 }
 
 
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+/*contiene al nav entero*/
+nav{
+  
+  background: #2fcdcd;
+  height: 80px;
+  width: 100%;
+}
+
+.enlace{
+  position: absolute;
+  padding: 20px 50px;
+}
+.logo{
+  height: 40px;
+}
+/*indica como tienen q estar ubicados las listas*/
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+/*indica como deben estar ubicados los item de las listas*/
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+/*elementos q contiene los item li de las listas ul*/
+nav ul li a{
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+li a:hover{
+  background: #000090;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+section{
+  background: url(fondo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px){
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: red;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+}
 
 
 
@@ -192,8 +248,7 @@ li#experiencia{
 
 
 
-
-
+/*
 
 @media (max-width: 768px){
   *{
@@ -204,6 +259,7 @@ li#experiencia{
     color:white;
   }
 /*barra de navegacion*/
+/*
   .barra{
     background: black ;
     position: relative;
@@ -231,13 +287,11 @@ li#experiencia{
     
   
   }
+  */
 
 
 
-
-
-
-
+/*
   div.container-datosPersonales{
     display: block;
     width: 100%;
@@ -309,6 +363,7 @@ li#experiencia{
     margin: 25%;
    
   }
+
 
 
 
