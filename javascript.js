@@ -30,6 +30,7 @@ import {asignatura} from './datosUni.js';*/
 import { universidades } from './datosUni2.js';
 
 document.getElementById("boton").onclick = function traerDatos() {
+    
 
     $.ajax({
         url: 'https://randomuser.me/api/?inc=gender,name,location,email,dob,phone,cell,picture',
@@ -44,7 +45,7 @@ document.getElementById("boton").onclick = function traerDatos() {
                 document.getElementById("direccion").innerHTML = "Direccion: " + item.location.street.name + "<br>" + item.location.street.number;
                 document.getElementById("celular").innerHTML = "Celular: " + item.cell + "<br>" + "telefono: " + item.phone;
                 document.getElementById("email").innerHTML = "Correo Electronico: " + item.email;
-                document.getElementById("retrato").innerHTML = "<img src='" + item.picture.large + "'>"
+                document.getElementById("retrato").innerHTML = "<img src='" + item.picture.large + "' alt='Imagen'>"
 
             };
         }
@@ -107,7 +108,7 @@ document.getElementById("boton").onclick = function traerDatos() {
     document.getElementById("titulo1").innerHTML = "Datos Personales";
     document.getElementById("titulo2").innerHTML = "Datos Universitarios";
     document.getElementById("experiencia").innerHTML = "Experiencias Laborales";
-    document.getElementById("parrafo").innerHTML = " ";
+    document.getElementById("parrafo").innerHTML = "";
 }
 
 
