@@ -40,7 +40,7 @@ document.getElementById("boton").onclick = function traerDatos() {
 
                 document.getElementById("nombre").innerHTML = "Nombre: " + item.name.first;
                 document.getElementById("apellido").innerHTML = "Apellido: " + item.name.last;
-                document.getElementById("nacionalidad").innerHTML = "Nacionalidad :" + item.location.country;
+                document.getElementById("nacionalidad").innerHTML = "Nacionalidad: " + item.location.country;
                 document.getElementById("edad").innerHTML = "Edad: " + item.dob.age;
                 document.getElementById("direccion").innerHTML = "Direccion: " + item.location.street.name + "<br>" + item.location.street.number;
                 document.getElementById("celular").innerHTML = "Celular: " + item.cell + "<br>" + "telefono: " + item.phone;
@@ -109,6 +109,7 @@ document.getElementById("boton").onclick = function traerDatos() {
     document.getElementById("titulo2").innerHTML = "Datos Universitarios";
     document.getElementById("experiencia").innerHTML = "Experiencias Laborales";
     document.getElementById("parrafo").innerHTML = "";
+    document.getElementById("cv").innerHTML = "Curriculum Vitae"
 }
 
 

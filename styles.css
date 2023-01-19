@@ -1,37 +1,26 @@
-* {
+/* css creado para ver si se puede mejorar el diseño vamos*/
+body{
   margin: 0;
-  font-size: 15px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+ 
+}
+*{
   list-style: none;
-
   text-decoration: none;
 }
-body {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: beige;
-  font-size: 22px;
-}
-/*div q contiene ala barra de navegacion*/
 .contenedor{
-  max-width: 2000px;
-  margin:0 auto;
-  background-color: #9c522e;
-  height: 80px;
+  width: 100%;
+  height: 10vh;
+  background: burlywood;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
-/*div q contiene a los componentes de la barra de navegacion*/
-
-.barra{
-  display: flex;/*solo afecta al hijo directo*/
-  justify-content: flex-end;
-  padding-top: 15px;
-
+#check{
+  display: none;
 }
-/*div q contiene alos elementos del nav*/
-.navegacion a{
-  color:white;
-  font-size: 18px;
-  margin-right: 20px;
-}
-/*el input y el check*/
 .checkbtn{
   font-size: 30px;
   color: #fff;
@@ -41,87 +30,112 @@ body {
   cursor: pointer;
   display: none;
 }
-#check{
-  display: none;
-}
-/*contenedores de informacion*/
-
-div.container-datosPersonales{
-  display: flex;
-  float: left;
-  width: 48%;
-  height: 300px;
-  padding: 2px;
-  /*border: 1px solid black;*/
-
-}
-div.container-datosFormacion{
-  display: flex;
-  float: right;
-  width: 48%;
-  height: 300px;
-  padding: 2px;
-  
-  margin: 2px;
-  /*border: 1px solid black;*/
-  
-}
-div.container-datosTrabajo{
+nav a{
+  padding-left: 20px;
+  padding-right: 20px;
   display: inline-block;
-  width:100%;
-  
-
-  padding: 2px;
-  
-  
-  margin:0 auto;
-  /*border: 1px solid black;*/
-  
-
+  color: white;
 }
-/*titulos de informacion*/
-.cv{
+.todo-todo{
+  background:black ;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  min-height: 100vh;
 }
-
-li#titulo1, li#titulo2{
-  align-items: center;
-  justify-content: center;
-  margin-left: 25%;
-}
-li#experiencia{
-  justify-content: center;
-  align-items: center;
-  margin: 0 30%;
+.contenedor-todo{
+  position: relative;
+  background: white;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100vh;
  
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+
 }
-/*haciendo responsive nuestro cv*/
-
-.navegacion a:hover{
-  color:red ;
+.h12{
+  background: black;
+  width: 100%;
+  height: 80px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 15px;
+}
+h1{
+  padding: 15px;
+}
+.sector-left{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background: #003147;
   
+  align-items: center;
+}
+#retrato{
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+img{
+  margin-top: 10px;
+  border-radius: 50%;
+  position: center center;
+}
+.container-datosPersonales{
+  border-top: 3px solid #004149;
 }
 
 
-@media (max-width: 768px) {
-  .checkbtn {
+
+
+
+
+
+
+.sector-right{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container-datosFormacion{
+  border-top: 3px solid #003147;
+}
+
+.container-datosTrabajo{
+  border-top:3px solid #003147;
+}
+
+@media(max-width:768px){
+  .checkbtn{
       display: block;
   }
-  div.container-datosPersonales{
-      display: block;
-  
+  .contenedor-todo{
+      position: relative;
+      background: white;
+      width: 100%;
+      max-width: 1000px;
+      min-height: 100vh;
+     
+      display:flex;
+      flex-direction: column;
   }
-  
-  div.container-datosFormacion{
-      display: block;
-      
-      
+  .site-header{
+      width: 100%;
+  height: 11vh;
+  background: burlywood;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   }
-  div.container-datosTrabajo{
-      display: block;}
   .navegacion{
       position:fixed;
       width: 100%;
@@ -140,22 +154,30 @@ li#experiencia{
   }
   #check:checked ~ .navegacion{
       left:0;
+      z-index: 1;
+      padding-top: 15px;
+  }
+ .sector-rigth{
+ 
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  
+  
+  align-items: center;
+ }
+ .container-datosFormacion{
+     
+     border-top: 3px solid #003147;
+     border-bottom: 3px solid #003147;
+  width: 100%;
   }
 
+  .container-datosTrabajo{
+  border-top:3px solid #003147;
+  }
+  .container-datosPersonales{
+      border-top: 3px solid #004149;
+      width: 100%;
+  }
 }
-
-/*modificamos la imagen*/
-img{
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-}
-div#retrato{
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-}
-
