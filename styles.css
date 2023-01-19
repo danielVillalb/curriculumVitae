@@ -124,7 +124,6 @@ img{
       width: 100%;
       max-width: 1000px;
       min-height: 100vh;
-     
       display:flex;
       flex-direction: column;
   }
@@ -157,24 +156,24 @@ img{
       z-index: 1;
       padding-top: 15px;
   }
- .sector-rigth{
- 
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
+  .sector-rigth{
   
-  
-  align-items: center;
- }
- .container-datosFormacion{
-     
-     border-top: 3px solid #003147;
-     border-bottom: 3px solid #003147;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    
+    
+    align-items: center;
+  }
+  .container-datosFormacion{
+      border-top: 3px solid #003147;
+    border-bottom: 3px solid #003147;
   width: 100%;
   }
 
   .container-datosTrabajo{
   border-top:3px solid #003147;
+  width: 100%;
   }
   .container-datosPersonales{
       border-top: 3px solid #004149;
