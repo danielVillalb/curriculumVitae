@@ -111,7 +111,7 @@ function traerDatos() {
     document.getElementById("titulo1").innerHTML = "Datos Personales";
     document.getElementById("titulo2").innerHTML = "Datos Universitarios";
     document.getElementById("experiencia").innerHTML = "Experiencias Laborales";
-    document.getElementById("parrafo").innerHTML = "";
+    //document.getElementById("parrafo").innerHTML = "";
     //document.getElementById("cv").innerHTML = "Curriculum Vitae"
 }
 

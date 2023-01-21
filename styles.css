@@ -42,13 +42,16 @@ nav a{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: 100%;
+ 
+  min-height: 90vh;
 }
 .contenedor-todo{
   position: relative;
   background: white;
   width: 100%;
   max-width: 1000px;
-  min-height: 100vh;
+  min-height: 90vh;
  
   display:grid;
   grid-template-columns: 1fr 2fr;
@@ -71,7 +74,7 @@ h1{
   padding: 15px;
 }*/
 .sector-left{
-  border: 1px solid black;
+ 
   display: flex;
   flex-direction: column;
   background: #DBE7ED;
@@ -89,7 +92,7 @@ img{
   position: center center;
 }
 .container-datosPersonales{
-  border-top: 3px solid #004149;
+  border-top: 1px solid white;
 }
 
 
@@ -109,11 +112,11 @@ img{
 
 
 .container-datosFormacion{
-  border-top: 3px solid #003147;
+  border-top: 3px solid #DBE7ED;
 }
 
 .container-datosTrabajo{
-  border-top:3px solid #003147;
+  border-top:3px solid #DBE7ED;
 }
 
 @media(max-width:768px){
@@ -176,7 +179,7 @@ img{
   }
   .container-datosFormacion{
       border-top: 1px solid black;
-    border-bottom: 3px solid black;
+    border-bottom: 1px solid black;
   width: 100%;
   }
 
@@ -185,7 +188,7 @@ img{
   width: 100%;
   }
   .container-datosPersonales{
-      border-top: 1px solid white;
+      border-top: 1px solid black;
       width: 100%;
   }
   .contenedor{
@@ -197,8 +200,23 @@ img{
     align-items: right;
   }
   li{
+    text-align: left;
+  }
+  p{
     text-align: center;
   }
   
  
+}
+h2{
+  margin-left: 30px;
+}
+#boton{
+  border:0px solid burlywood;
+  color:gray;
+  box-shadow: 0 0 40px 40px white inset, 0 0 0 0 white;
+}
+#boton:hover{
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px blue;
+  background:ligthblue;
 }
