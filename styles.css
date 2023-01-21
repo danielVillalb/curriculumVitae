@@ -175,8 +175,8 @@ img{
     align-items: center;
   }
   .container-datosFormacion{
-      border-top: 3px solid black;
-    border-bottom: 3px solid white;
+      border-top: 1px solid black;
+    border-bottom: 3px solid black;
   width: 100%;
   }
 
@@ -185,7 +185,7 @@ img{
   width: 100%;
   }
   .container-datosPersonales{
-      border-top: 3px solid white;
+      border-top: 1px solid white;
       width: 100%;
   }
   .contenedor{
