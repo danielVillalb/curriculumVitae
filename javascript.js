@@ -29,7 +29,10 @@ document.getElementsById("titulo2").innerHTML="Formacion academica ";
 import {asignatura} from './datosUni.js';*/
 import { universidades } from './datosUni2.js';
 
-document.getElementById("boton").onclick = function traerDatos() {
+traerDatos()
+
+document.getElementById("boton").onclick = traerDatos
+function traerDatos() {
     
 
     $.ajax({
