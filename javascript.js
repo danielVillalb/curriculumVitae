@@ -1,32 +1,4 @@
-/*
-import data from './jason.json';
 
-console.log(data);*/
-/*
-document.getElementById("boton").onclick=function(){
-
-    console.log("hiciste click en el boton")
-    
-    const persona='{"nombre":"Carlos Daniel","apellido":"Villalba","nacionalidad":"Argentino","edad":"25","celular":"1151387649","direccion":"Carlos Alberto Becu 3041","email":"villalbacarlosd97@gmail.com"}';
-    const obj=JSON.parse(persona)
-    console.log(persona)
-    /*
-    const x=document.getElementById("container");
-    const y=document.getElementById("nombre");
-    *//*
-document.getElementById("nombre").innerHTML="Nombre:" + obj.nombre  ;
-document.getElementById("apellido").innerHTML="Apellido:" + obj.apellido;
-document.getElementById("nacionalidad").innerHTML="Nacionalidad:" + obj.nacionalidad;
-document.getElementById("edad").innerHTML="Edad:" + obj.edad;
-document.getElementById("direccion").innerHTML="Direccion:" + obj.direccion;
-document.getElementById("celular").innerHTML="Celular:" + obj.celular;
-document.getElementById("email").innerHTML="Correo Electronico:" + obj.email;
-document.getElementsById("titulo1").innerHTML="Datos Personales "+"1";
-
-document.getElementsById("experiencia").innerHTML="Experiecias laborales";
-document.getElementsById("titulo2").innerHTML="Formacion academica ";
-}ss
-import {asignatura} from './datosUni.js';*/
 import { universidades } from './datosUni2.js';
 
 traerDatos()
@@ -78,22 +50,7 @@ function traerDatos() {
 
 
     })
-    /*
-        $.ajax({
-            url:'https://datos.unican.es/docencia/54/asignaturas-de-grado-2018-2019.json',
-            dataType:'json',
-            success:function(data3){
-                for (let item of data3){
-                    document.getElementById("secundaria").innerHTML="secundaria:"+item.asignature
-                }
-            }
-        })
-    console.log(datos)
-    
-    
-    console.log(asignatura.length);
-    console.log(asignatura[1].Centro);
-    */
+
     var num = [];
     for (i = 0; i <= 3; i++) {
         num.push(Math.floor(Math.random() * (universidades.length)));
@@ -111,8 +68,7 @@ function traerDatos() {
     document.getElementById("titulo1").innerHTML = "Datos Personales";
     document.getElementById("titulo2").innerHTML = "Datos Universitarios";
     document.getElementById("experiencia").innerHTML = "Experiencias Laborales";
-    //document.getElementById("parrafo").innerHTML = "";
-    //document.getElementById("cv").innerHTML = "Curriculum Vitae"
+ 
 }
 
 
